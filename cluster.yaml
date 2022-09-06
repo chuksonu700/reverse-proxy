@@ -1,0 +1,21 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: revers-proxy-config
+  region: us-east-1
+
+vpc:
+  id: "vpc-0a862f484037a2073"
+  subnets:
+    private:
+      us-east-1f:
+          id: "subnet-0fe92e538c61abc84"
+      us-east-1b:
+          id: "subnet-06d4b6786f4562f9c"
+    public:
+      us-east-1f:
+          id: "subnet-0b539c0684cdf5d83"
+      us-east-1b:
+          id: "subnet-07d49dad77e51e118"
+
